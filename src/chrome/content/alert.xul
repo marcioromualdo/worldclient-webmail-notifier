@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://browser/skin/browser.css" type="text/css"?>
+<?xml-stylesheet href="chrome://worldclientwebmail/content/alert.css" type="text/css"?>
+
+<window id="alertNotification"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        windowtype="alert:alert"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xhtml:role="alert"
+        pack="start"
+        onload="onAlertLoad()">
+
+  	<script type="application/javascript" src="chrome://worldclientwebmail/content/alert.js"/>
+	<script type="application/javascript" src="chrome://worldclientwebmail/content/util.js"/>
+	<script type="application/javascript" src="chrome://worldclientwebmail/content/mail.js"/>
+
+	<box id="alertBox" class="alertBox" orient="horizental">
+	    <hbox class="alertImageBox" align="center" valign="top">
+			<image id="alertImage" onclick="WorldClientWMNMailChrome.openMail();window.close();"/>
+	    </hbox>
+	
+	    <vbox id="alertTextBox" class="alertTextBox">
+			<label id="alertTitleLabel" value="" class="alertTitle plain"/>
+	    </vbox>
+	    
+	    <vbox>
+			<toolbarbutton id="alertCloseButton" class="tabs-closebutton tab-close-button" oncommand="window.close();"/>
+	    </vbox>
+	</box>
+	
+  	<!-- This method is called inline because we want to make sure we establish the width
+       and height of the alert before we fire the onload handler. -->
+  	<script type="application/javascript">prefillAlertInfo();</script>	
+</window>

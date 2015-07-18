@@ -1,0 +1,22 @@
+<!ENTITY l_pref "WorldClient For MDaemon - Preferências">
+<!ENTITY l_settings "Configurações">
+<!ENTITY l_example "ex">
+<!ENTITY l_webserver "Servidor Web">
+<!ENTITY l_user "Utilizador">
+<!ENTITY l_password "Password">
+<!ENTITY l_interval "Intervalo de Verificação">
+<!ENTITY l_the_each "a cada">
+<!ENTITY l_minutes "minutos">
+<!ENTITY l_language "Linguagem">
+<!ENTITY l_period "Período de Verificação">
+<!ENTITY l_between_the "entre às">
+<!ENTITY l_and_the "e às">
+<!ENTITY l_hours "horas">
+<!ENTITY l_onlyInbox "Apenas Caixa de Entrada">
+<!ENTITY l_showNotification "Exibir Janela de Alerta">
+<!ENTITY l_playSound "Alerta Sonoro">
+<!ENTITY l_none "Não">
+<!ENTITY l_femaleVoice "Voz Feminina">
+<!ENTITY l_maleVoice "Voz Masculina">
+<!ENTITY l_debugMode "Modo Debug">
+<!ENTITY l_only_dev "Apenas para desenvolvedores">

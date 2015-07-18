@@ -1,0 +1,15 @@
+pref("extensions.worldclientwebmail.debug", false);
+pref("extensions.worldclientwebmail.site", "");
+pref("extensions.worldclientwebmail.username", "");
+pref("extensions.worldclientwebmail.interval", "20");
+pref("extensions.worldclientwebmail.language", "en");
+pref("extensions.worldclientwebmail.theme", "LookOut");
+pref("extensions.worldclientwebmail.initial_hour", "08:00:00");
+pref("extensions.worldclientwebmail.final_hour", "20:00:00");
+pref("extensions.worldclientwebmail.allDay", true);
+pref("extensions.worldclientwebmail.showNotification", true);
+pref("extensions.worldclientwebmail.onlyInbox", false);
+pref("extensions.worldclientwebmail.enabled", true);
+pref("extensions.worldclientwebmail.msg", "");
+pref("extensions.worldclientwebmail.beepChoice", "0");
+pref("extensions.worldclientwebmail.reloadWMN", false);

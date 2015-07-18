@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://worldclientwebmail/skin/overlay.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://worldclientwebmail/locale/overlay.dtd">
+
+<overlay id="worldclientwebmail-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  	
+	<script type="application/x-javascript" src="chrome://worldclientwebmail/content/worldclient.js"/>
+	<script type="application/javascript" src="chrome://worldclientwebmail/content/util.js"/>
+	<script type="application/javascript" src="chrome://worldclientwebmail/content/mail.js"/>
+
+	<stringbundleset>
+    	<stringbundle id="worldclientwebmail_bundle" src="chrome://worldclientwebmail/locale/overlay.properties"/>
+  	</stringbundleset>
+	
+		<popupset>
+    		<popup id="worldclientwebmail-menu" position="after_start">
+      			<menuitem id="worldclientwebmail-menuitem-checknow" label="&checkNow;" default="true" oncommand="WorldClientWMNChrome.refreshInformation()"/>
+
+      			<menuitem id="worldclientwebmail-menuitem-enable" label="&enable;" autocheck="true" checked="true"
+		                type="checkbox" oncommand="WorldClientWMNChrome.onEnabled()"/>  
+      			
+      			<menuseparator/>
+      			<menuitem id="worldclientwebmail-menuitem-options" label="&options;" oncommand="WorldClientWMNUtilChrome.openConfig()"/>
+    		</popup>
+  		</popupset>
+
+	<statusbar id="status-bar">
+   		<statusbarpanel id="worldclientwebmail-statusbar" label=""
+				context="worldclientwebmail-menu"
+				tooltip=""
+				ondblclick="WorldClientWMNMailChrome.openMail();WorldClientWMNUtilChrome.cleanStatusBar();"
+				enabled="true"
+				newMail="false"/>
+	</statusbar>
+	
+</overlay>

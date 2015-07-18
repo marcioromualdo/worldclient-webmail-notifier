@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://worldclientwebmail/locale/options.dtd">
+
+<prefwindow id="worldclientwebmail-prefs"
+		title="&l_pref;"
+		xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+		onload="onLoad()"
+		ondialogaccept="return onAccept()">
+
+	<stringbundleset>
+    	<stringbundle id="worldclientwebmail_bundle" src="chrome://worldclientwebmail/locale/overlay.properties"/>
+  	</stringbundleset>
+
+	<script type="application/javascript" src="chrome://worldclientwebmail/content/options.js"/>
+	<script type="application/javascript" src="chrome://worldclientwebmail/content/util.js"/>
+
+	<prefpane id="worldclientwebmail-pane" label="&l_settings;">
+		<preferences>
+			<preference id="pref_debug" name="extensions.worldclientwebmail.debug" type="bool"/>
+			<preference id="pref_site" name="extensions.worldclientwebmail.site" type="string"/>
+			<preference id="pref_username" name="extensions.worldclientwebmail.username" type="string"/>
+			<preference id="pref_interval" name="extensions.worldclientwebmail.interval" type="string"/>
+			<preference id="pref_language" name="extensions.worldclientwebmail.language" type="string"/>
+			<preference id="pref_theme" name="extensions.worldclientwebmail.theme" type="string"/>
+			<preference id="pref_initial_hour" name="extensions.worldclientwebmail.initial_hour" type="string"/>
+			<preference id="pref_final_hour" name="extensions.worldclientwebmail.final_hour" type="string"/>
+			<preference id="pref_showNotification" name="extensions.worldclientwebmail.showNotification" type="bool"/>
+			<preference id="pref_onlyInbox" name="extensions.worldclientwebmail.onlyInbox" type="bool"/>
+			<preference id="pref_beepChoice" name="extensions.worldclientwebmail.beepChoice" type="string"/>
+		</preferences>
+	 
+		<hbox align="center">
+			<label control="site" value="&l_webserver;:"/>
+			<textbox preference="pref_site" id="site" maxlength="60" size="40"/>
+			<label value="&l_example;: https://webmail.domain"/>
+		</hbox>
+	
+		<hbox align="center">
+			<label control="username" value="&l_user;:"/>
+			<textbox preference="pref_username" id="username" maxlength="60" size="40"/>
+			<label value="&l_example;: user@domain"/>
+		</hbox>
+		
+		<hbox align="center">
+			<label control="pass" value="&l_password;:"/>
+			<textbox type="password" id="password" maxlength="30" size="20"/>
+		</hbox>
+		
+		<hbox align="center">
+			<label control="interval" value="&l_interval;:"/>
+			<label value="&l_the_each;"/>
+			<textbox type="number" preference="pref_interval" id="interval" maxlength="4" size="5"/>
+			<label value="&l_minutes;"/>
+		</hbox>
+		
+		<hbox align="center">
+			<label control="language" value="&l_language;:"/>
+			<menulist preference="pref_language" id="language">
+			  <menupopup>
+				<menuitem value="en" label="English"/>
+				<menuitem value="fc" label="Canadien français"/>
+				<menuitem value="zh" label="Chinese"/>
+				<menuitem value="da" label="Dansk"/>
+				<menuitem value="de" label="Deutsch"/>
+				<menuitem value="cs" label="Česky"/>
+				<menuitem value="uk" label="English-UK"/>
+				<menuitem value="es" label="Español"/>
+				<menuitem value="fr" label="Français"/>
+				<menuitem value="id" label="Bahasa Indonesia"/>
+				<menuitem value="it" label="Italiano"/>
+				<menuitem value="hu" label="Magyar"/>
+				<menuitem value="nl" label="Nederlands"/>
+				<menuitem value="no" label="Norsk (bokmål)"/>
+				<menuitem value="pl" label="Polski"/>
+				<menuitem value="pt" label="Português"/>
+				<menuitem value="ru" label="Русский"/>
+				<menuitem value="hr" label="Hrvatski"/>
+				<menuitem value="sl" label="Slovensko"/>
+				<menuitem value="fi" label="Suomi"/>
+				<menuitem value="sv" label="Svenska"/>
+				<menuitem value="tw" label="Taiwan"/>
+				<menuitem value="sr" label="Srpski"/>
+				<menuitem value="gr" label="Ελληνικά"/>
+				<menuitem value="tr" label="Türkçe"/>
+				<menuitem value="ro" label="Romana"/>
+				<menuitem value="ar" label="الإنجليزية"/>
+			  </menupopup>
+			</menulist>
+		</hbox>
+	
+		<hbox align="center">
+			<label control="initial_hour" value="&l_period;:"/>
+			<label value="&l_between_the;"/>
+			<timepicker preference="pref_initial_hour" id="initial_hour" hideseconds="true"/>
+			<label value="&l_and_the;"/>
+			<timepicker preference="pref_final_hour" id="final_hour" hideseconds="true"/>
+			<label value="&l_hours;"/>
+		</hbox>
+		
+		<hbox align="center">
+			<label control="onlyInbox" value="&l_onlyInbox;:"/>
+			<checkbox preference="pref_onlyInbox" id="onlyInbox"/>
+		</hbox>
+	
+		<hbox align="center">
+			<label control="showNotification" value="&l_showNotification;:"/>
+			<checkbox preference="pref_showNotification" id="showNotification"/>
+		</hbox>
+
+		<hbox align="center">
+			<label control="beepChoice" value="&l_playSound;:"/>
+			<menulist preference="pref_beepChoice" id="beepChoice">
+              <menupopup>
+                <menuitem value="0" label="&l_none;"/>
+                <menuitem value="1" label="&l_femaleVoice;"/>
+                <menuitem value="2" label="&l_maleVoice;"/>
+              </menupopup>
+            </menulist>
+		</hbox>
+
+		<hbox align="center">
+			<label control="debug" value="&l_debugMode;"/> (<label value="&l_only_dev;"/>):
+			<checkbox preference="pref_debug" id="debug"/>
+		</hbox>
+
+	</prefpane>
+ 
+</prefwindow>

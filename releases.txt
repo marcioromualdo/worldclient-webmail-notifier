@@ -1,0 +1,157 @@
+16/12/2010 - versão 1.1.0:
+
+I made this addon to warn me when new mails arrive from MDaemon Mail Server. 
+To test it I used the alert() javascript to see the information between Firefox and the Mail Server.
+To see the javascripts alerts, in the preferences file, turn the debug variable to true.
+After that, my co-workers installed the addon and they liked it very much. 
+They think that is is very useful, because where we work, we cannot use the IMAP or POP3 because they are blocked by the Firewall.
+At home, I installed the MDaemon Mail Server for you to test.
+Use the following configuration: 
+	web server: http://mdaemonmailserver.slyip.net
+	user: test.user@company.mail
+	password: Test123
+Thank you
+
+
+27/12/2010 - versão 1.1.1:
+Notas para revisores:
+Added the "extensions." prefix to all of preference names
+
+25/01/2011 - versão 1.2.2:
+Notas para revisores:
+Changes at version 1.2.2:
+- Options panel also available in Spanish.
+- Clean the msg variable when the user open the webmail through doubleclick on statusbar image. This is required to notify the user again when new messages arrive.
+
+To Test:
+I made this addon to warn me when new mails arrive from MDaemon Mail Server. 
+To test it I used the alert() javascript to see the information between Firefox and the Mail Server.
+To see the javascripts alerts, in the preferences file, turn the debug variable to true.
+After that, my co-workers installed the addon and they liked it very much. 
+They think that is is very useful, because where we work, we cannot use the IMAP or POP3 because they are blocked by the Firewall.
+At home, I installed the MDaemon Mail Server for you to test.
+Use the following configuration: 
+    web server: http://mdaemonmailserver.slyip.net
+    user: test.user@company.mail
+    password: Test123
+Thank you
+
+16/01/2012 - versão 2.0.2:
+Notas para revisores:
+Changes at version 2.0.2:
+- Status-bar panel with white background and grey border.
+- Fixed problem with MDaemon Messaging Server version 12.5.2
+
+To Test:
+I made this addon to warn me when new mails arrive from MDaemon Mail Server. 
+To test it I used the alert() javascript to see the information between Firefox and the Mail Server.
+To see the javascripts alerts, in the preferences file, turn the debug variable to true.
+After that, my co-workers installed the addon and they liked it very much. 
+They think that is is very useful, because where we work, we cannot use the IMAP or POP3 because they are blocked by the Firewall.
+At home, I installed the MDaemon Mail Server for you to test.
+Use the following configuration: 
+	web server: http://mdaemonmailserver.slyip.net
+	user: test.user@company.mail
+	password: Test123
+Thank you
+
+
+17/01/2012 - versão 2.1.2:
+Changes at version 2.1.2:
+1- Fixed problem when already exist a worldclient tab but the session is expired.
+2- Fixed problem when put the plugin disabled and restart de firefox
+
+To Test:
+At home, I installed the MDaemon Mail Server for you to test.
+Use the following configuration: 
+    web server: http://mdaemonmailserver.slyip.net
+    user: test.user@company.mail
+    password: Test123
+To test problem 1: 
+    Double click on mail image to open the webmail. 
+    Using other browser (IE, Chrome, or other firefox in another pc) enter in web server to expire the last session
+    Verify at firefox if it continue check for news emails with success. The plugin must open a new session to check news emails. You can configure the "Check Interval" in 1 minute to no wait so much.
+To test problem 2:
+    Click on "enable" at status bar panel to disable the plugin.
+    Restart the Firefox.
+    The status bar must show a red ball and show the option "enable" not checked at status-bar panel.
+    Click on "enable" at status-bar painel to enable the plugin.
+    Restart the firefox.
+    The status.bar must show a mail image and show the option "enable" checked at status bar panel.
+Thank you and sorry my english.
+
+
+19/09/2012 - versão 2.2.0:
+Changes at version 2.2.0:
+1- Doesn't count anymore the unread messages in the drafts folder and the sent folder.
+2- Updated to work with the MDaemon Mail Server version 13.0.0.
+3- New options of warning sound: none, male voice or female voice.
+
+20/09/2012 - versão 2.2.1:
+Changes at version 2.2.1:
+1- Changed the name of beep variable (boolean in old versions) to beepChoice (string in new version) to select the option "Play Sound" so that it can work in the old versions.
+
+20/09/2012 - versão 2.2.2:
+Changes at version 2.2.2:
+1- Fixed getTotalNewsMgs() method to work with the MDaemon Mail Server old version 12.5.6
+
+12/09/2013 - versão 2.3.0:
+Changes version 2.3.0:
+1- Added new option "Debug Mode" (Only for developers). If enabled, writes debug messages in the "Error Console".
+2- Fixed to work with MDaemon 13.5.2
+
+To Test: 
+- In Option, select "Debug Mode".
+- Click in "Verify Now".
+- See the information between Firefox and the Mail Server in "Error Console" of Firefox.
+
+Use the following configuration: 
+    web server: http://mdaemonmailserver.slyip.net
+    user: test.user@company.mail
+    password: Test123
+
+16/09/2013 - versão 2.3.1:
+Changes version 2.3.1:
+- Fixed to work with MDaemon 13.5.2 version and previous versions. 
+
+To Test: 
+- Click on "Verify Now".
+- Check if the popup window appears.
+- Click twice on the icon and check if the email account appears.  
+
+Use the following configuration: 
+    web server: http://mdaemonmailserver.slyip.net
+    user: test.user@company.mail
+    password: Test123
+
+21/09/2013 - versão 2.3.2:
+Changes version 2.3.2:
+- Doesn't count the unread messages in the draft folder, sent folder and trash folder.
+
+To Test: 
+- Click on "Verify Now".
+- Check if the popup window appears.
+- Check if doesn't count the unread messages in the draft folder, sent folder and trash folder. 
+
+Use the following configuration: 
+    web server: http://mdaemonmailserver.slyip.net
+    user: test.user@company.mail
+    password: Test123
+
+--------------------------------------------------------------------------------
+---EMail para WorldClient site:
+Good afternoon,
+
+I made the Mozilla Add-on "WorldClient WebMail Notifier" to warn me when new mails arrive from MDaemon Mail Server.
+It checks for new mails in the MDaemon Email Server.
+It is a very useful addon for users who cannot use the ComAgent or POP3 or IMAP because of the company's firewall.
+
+The addon was fully reviewed by Mozilla Reviewers in January/2011 and has been downloaded 475 times until now.
+
+Can you add the addon's link in your site?
+
+The link is: https://addons.mozilla.org/en-US/firefox/addon/worldclient-webmail-notifier/
+
+Best regards,
+
+Marcio Romualdo da Silva

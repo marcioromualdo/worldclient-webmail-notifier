@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<project name="worldclientwebmail" default="all" basedir="..">
+	<property name="root" value="." />
+	<property name="src" value="${root}/src" />
+	<property name="deploy" value="${root}/deploy" />
+
+	<target name="all" depends="clean_jar, create_jar" />
+
+	<target name="clean_jar" depends="">
+		<delete file="${deploy}/worldclientwebmail.xpi"/>
+	</target>
+
+	<target name="create_jar">
+		<mkdir dir="${deploy}"/>
+		<jar jarfile="${deploy}/worldclientwebmail.xpi">
+			<fileset dir="${src}/" excludes="build.xml">
+				<include name="**/*.js"/>
+				<include name="**/*.xul"/>
+				<include name="**/*.ico"/>
+				<include name="**/*.manifest"/>
+				<include name="**/*.rdf"/>
+				<include name="**/*.png"/>
+				<include name="**/*.dtd"/>
+				<include name="**/*.properties"/>
+				<include name="**/*.css"/>
+				<include name="**/*.xml"/>
+				<include name="**/*.jpeg"/>
+				<include name="**/*.wav"/>
+			</fileset>
+		</jar>
+	</target>
+</project>

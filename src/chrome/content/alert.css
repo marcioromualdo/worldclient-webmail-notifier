@@ -1,0 +1,41 @@
+#alertBox {
+  background-color: white;
+}
+.alertImageBox {
+  -moz-margin-start: 4px;
+  -moz-margin-end: 6px;
+  min-height: 46px;
+
+  padding-top: 2px;
+}
+.alertTitle {
+  font-weight: bold;
+
+  padding-bottom:5px !important;
+}
+.alertText[clickable="true"] {
+  color: inherit;
+  text-decoration: none !important;
+  -moz-margin-end: 6px;
+  cursor: pointer;  
+}
+.alertText[clickable="true"]:hover:active {
+  color: #424F63;
+}
+.alertTextBox {
+  -moz-padding-end: 10px;
+  padding-top: 5px;
+}
+#alertImage {
+  list-style-image: url("chrome://worldclientwebmail/skin/worldclient.jpeg");
+}
+.tab-close-button {
+  padding: 4px 2px;
+  margin: 0px;
+}
+
+.tab-close-button > .toolbarbutton-icon {
+  margin: 0px;
+  -moz-padding-end: 2px !important;
+  -moz-padding-start: 2px !important;
+}

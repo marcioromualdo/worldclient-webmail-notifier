@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:name>WorldClient Webmail Notifier</em:name>
+    <em:id>webmail@daemon.com</em:id>
+    <em:version>2.3.2</em:version>
+    <em:type>2</em:type>
+    
+    <em:optionsURL>chrome://worldclientwebmail/content/options.xul</em:optionsURL>
+	<em:iconURL>chrome://worldclientwebmail/skin/worldclient.png</em:iconURL>
+
+    <!-- Describe the Firefox versions we support -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>3.0</em:minVersion>
+        <em:maxVersion>27.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    
+    <em:localized>
+      <Description>
+      	<em:name>WorldClient Webmail Notifier</em:name>
+      	<em:creator>Marcio Romualdo da Silva - marcioromualdo@hotmail.com</em:creator>
+        <em:locale>pt</em:locale>
+        <em:description>Verifica se existem novos emails no WorldClient For MDaemon. Funciona somente com a versão MDaemon Email Server Pro</em:description>
+      </Description>
+    </em:localized>
+
+    <em:localized>
+      <Description>
+      	<em:name>WorldClient Webmail Notifier</em:name>
+      	<em:creator>Marcio Romualdo da Silva - marcioromualdo@hotmail.com</em:creator>
+        <em:locale>en</em:locale>
+        <em:description>Checks for new mails in the WorldClient For MDaemon. Work only with the MDaemon Email Server Pro Version</em:description>
+      </Description>
+    </em:localized>
+    
+    <em:localized>
+      <Description>
+      	<em:name>WorldClient Webmail Notifier</em:name>
+      	<em:creator>Marcio Romualdo da Silva - marcioromualdo@hotmail.com</em:creator>
+        <em:locale>es</em:locale>
+        <em:description>Comprueba si hay correo nuevo en WorldClient For MDaemon. Sólo funciona con la versión MDaemon Email Server Pro</em:description>
+      </Description>
+    </em:localized>
+    
+  </Description>
+</RDF>

@@ -1,0 +1,62 @@
+-------------------------------------------------------------------------------
+Como montar o ficheiro .xpi:
+
+- zip as pastas: "locale", "content" e "locale"
+- renomeie o zip com o nome helloworld.jar
+- coloque o zip na pasta chrome
+- zip: a pasta "chrome" e os ficheiros chrome.manifest e install.rdf
+- renomeie este zip com o nome helloworld.xpi
+- abra o ficheiro xpi no firefox
+
+-------------------------------------------------------------------------------
+Endrereço do Addon:
+https://addons.mozilla.org/pt-BR/firefox/addon/257013/
+
+
+-------------------------------------------------------------------------------
+Url para login:
+https://webmail.infosistema.com/WorldClient.dll?View=Main?ReturnJavaScript=1&User=marcio.silva%40infosistema.com&Password=123456&Logon=Sign+In&Theme=Simple
+
+Url para checar emails:
+https://webmail.infosistema.com/WorldClient.dll?Session=KYROGOD&View=List&RefreshFolderCounts=1&ReturnJavaScript=1&Theme=LookOut
+
+-------------------------------------------------------------------------------
+URL de aprendizagem:
+
+Getting started with extension development
+http://kb.mozillazine.org/Getting_started_with_extension_development
+
+Firefox addons developer guide
+https://developer.mozilla.org/En/Firefox_addons_developer_guide
+
+Building an Extension
+https://developer.mozilla.org/en/Building_an_Extension
+
+Add-on Builder
+https://addons.mozilla.org/en-US/developers/tools/builder
+
+Getting Started
+https://addons.mozilla.org/en-US/developers/docs/how-to/getting-started
+
+
+https://developer.mozilla.org/en/Localizing_an_extension
+Localizing an extension
+
+XUL
+https://developer.mozilla.org/En/XUL
+
+Samples Of Code
+http://firefox-extension.wikidot.com/examples-of-code
+
+Firefox:Password Manager Debugging
+https://wiki.mozilla.org/Firefox:Password_Manager_Debugging
+
+Gecko SDK
+https://developer.mozilla.org/en/Gecko_SDK
+
+Tabbed browser
+https://developer.mozilla.org/en/Code_snippets/Tabbed_browser
+
+The Add-on Review Process and You
+http://blog.mozilla.com/addons/2010/02/15/the-add-on-review-process-and-you/
+

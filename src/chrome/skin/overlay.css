@@ -1,0 +1,26 @@
+#worldclientwebmail-statusbar {
+	-moz-binding: url('chrome://worldclientwebmail/content/overlay.xml#statusbarpanel-iconic-text');
+  	list-style-image: url("chrome://worldclientwebmail/skin/mail-button.png");
+}
+#worldclientwebmail-statusbar[newMail="true"] .statusbarpanel-icon {
+  	-moz-image-region: rect(24px 16px 40px 0px);
+}
+#worldclientwebmail-statusbar[newMail="false"] .statusbarpanel-icon {
+  	-moz-image-region: rect(24px 32px 40px 16px);
+}
+#worldclientwebmail-statusbar[newMail="true"] > .statusbarpanel-text {
+ 	margin: 0 0 0 4px;
+}
+#worldclientwebmail-statusbar[newMail="false"] > .statusbarpanel-text {
+  	margin: 0px !important;
+}
+#worldclientwebmail-statusbar[enabled="true"] .statusbarpanel-icon2 {
+  	display:none;
+}
+#worldclientwebmail-statusbar[enabled="false"] .statusbarpanel-icon2 {
+  	-moz-image-region: rect(24px 48px 40px 32px);
+}
+#worldclientwebmail-menu {
+  background-color:white;
+  border:1px solid grey;
+}

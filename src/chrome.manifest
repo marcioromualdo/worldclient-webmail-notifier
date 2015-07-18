@@ -1,0 +1,16 @@
+content   worldclientwebmail   chrome/content/
+skin      worldclientwebmail   classic/1.0   chrome/skin/
+
+locale    worldclientwebmail    pt    chrome/locale/pt/
+locale    worldclientwebmail    en    chrome/locale/en/
+locale    worldclientwebmail    es    chrome/locale/es/
+
+# Firefox
+overlay	chrome://browser/content/browser.xul    chrome://worldclientwebmail/content/worldclient.xul
+
+style	chrome://global/content/customizeToolbar.xul    chrome://worldclientwebmail/skin/overlay.css
+
+component {60bd72b0-fa6a-11df-8948-00237dbb124c} components/WorldClientWebmailService.js
+contract @mozilla.org/WorldClientWebmailService;1 {60bd72b0-fa6a-11df-8948-00237dbb124c}
+
+resource worldclientwebmail components/

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<bindings xmlns="http://www.mozilla.org/xbl"
+          xmlns:xbl="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<binding id="statusbarpanel-iconic-text">
+    	<content>
+      		<xul:stack>
+	      		<xul:image class="statusbarpanel-icon" xbl:inherits="src"/>
+	      		<xul:image class="statusbarpanel-icon2" xbl:inherits="src"/>      
+      		</xul:stack>
+      		<xul:label class="statusbarpanel-text" xbl:inherits="value=label,crop"/>
+    	</content>
+  	</binding>  
+</bindings>
+
